@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{outline:0;}
+
+  .modal-header, .close {
+      
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  
+  .msjerroneo {background-color: #C23336;}
+  .msjaprobado {background-color: #33CC66;}
+  .msjalerta {background-color: #FF9933;}
+  
+.linktabla {
+	color:#666666;
+	cursor:pointer;
+	text-decoration:none;
+	display: block;
+}
+		
+.linktabla:hover {color:#000000; font-weight:bold;}
+.linktabla:focus {color:#ff3333; font-weight:bold;}
+	
+#conf {cursor:default;}
+#conf:hover {background-color:transparent;}
+
+#barragradient {
+color:#717171;
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e0e0+0,efefef+50,e0e0e0+100 */
+background: #e0e0e0; /* Old browsers */
+background: -moz-linear-gradient(left, #e0e0e0 0%, #efefef 50%, #e0e0e0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #e0e0e0 0%,#efefef 50%,#e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #e0e0e0 0%,#efefef 50%,#e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=1 ); /* IE6-9 */	
+}
+
+.punteado{
+border-left-style: dotted;
+border-bottom-width: 4px; 
+color:#5A5A5A;
+border-color:#5A5A5A;
+height:60px;
+} 
+
+.adjuntos {cursor:pointer;}
+.adjuntos2 {width:100%;}
+
+.eliminar_adjuntos {
+	opacity:0.2;
+}
+
+@media screen and (min-width:992px)
+{
+/*	#cerrarsesion:after {
+        content: "Cerrar Sesión";
+	}*/
+	#imgpdvsa{ width:149px; height:42px; margin-top:10px;}
+	.punteado{font-size:20px;line-height: 62px;}
+}
+
+@media screen and (max-width:1199px)
+{
+	#headeruno{line-height: 31px;}
+}
+
+@media screen and (max-width:991px) 
+{
+	 /*Si la pantalla es menor a 991px cambia el boton de sesion a CERRAR*/
+/*	#cerrarsesion:after {
+        content: "Cerrar";
+	}*/
+	
+	#imgpdvsa{ width:127px; height:36px; margin-top:15px;}
+	.punteado{ font-size:20px;}
+	#headerdos{line-height: 62px;}
+
+}
+
+@media screen and (max-width:767px)
+{
+	/*Si la pantalla es menor a 767px cambia el boton de sesion a CERRAR SESION*/
+/*	#cerrarsesion:after {
+        content: "Cerrar Sesión";
+	}*/
+	#idheader {display:none;}
+	.navbar{margin-top:15px;}
+	.adjuntos {width:100%; cursor:default;}
+}
+
+.redimensionartextarea {
+resize: vertical;
+min-height: 120px;
+max-height: 250px;
+}
+
+.redimensionartextarea_asig {
+resize: vertical;
+min-height: 100px;
+max-height: 150px;
+}
+
+.div_correus, .div_notus {display:none;}
+
+@media ( max-width : 768px ) {
+  .btn-xs-text.btn-default:not(span) {
+    font-size: 0pt !important;
+  }
+  .btn-xs-text.btn-default.btn-lg .glyphicon {
+    font-size: 18pt !important;
+  }
+  .btn-xs-text.btn-default .glyphicon {
+    font-size: 12pt !important;
+	line-height: 17px;
+	height:20px;
+  }
+  .btn-xs-text.btn-default.btn-sm .glyphicon {
+    font-size: 12pt !important;
+  }
+  .btn-xs-text.btn-default.btn-xs .glyphicon {
+    font-size: 12pt !important;
+  }
+}
+
+.progress-bar-black {
+      background-color: purple !important;
+}
+
+fieldset.asignaciones {
+    border: 1px groove #ddd !important;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.asignaciones {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	width:auto;
+	padding:0 10px;
+	border-bottom:none;
+}

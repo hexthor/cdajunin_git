@@ -1,0 +1,5 @@
+Backup:
+C:\xampp\pgsql\bin>pg_dump.exe -U postgres cdajunin > "d:\Backups\cdajunin05-10-2016.sql"
+
+Restore: (tiene que existir la base de datos primero)
+c:\xampp\pgsql\bin>psql -h localhost -p 5432 -U postgres cdajunin < d:\Backups\cdajunin.sql
